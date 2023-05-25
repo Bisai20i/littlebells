@@ -22,103 +22,72 @@
         background-color: white;
         border-radius: 5px;;
       }
-      .active{
-        font-size: 18px;
-        color:blue;
-      }
       .bgimg{
         background-image: url(Images/students.jpg);
         background-color: rgba(255,255,255,0.75);
         background-blend-mode: lighten; 
         transition:.8s;
       }
-      .btn{
-        display:inline-flex;
-        position:absolute;
-        margin-top: -50px;
-        justify-content: center;
-        align-items: center;
-        width:100%;
-      }
-      #slider{
-        padding:5px;
-        margin: 1px 5px;
-        display:flex;
-        height:40px;
-        width: 100px;
-        background-color: blue;
-        border-radius: 20px;
-        align-items: center;
-        transition:.5s;
-      }
-      .btn span{
-        margin-left:2px;
-        margin-right: 2px;;
-        padding: 2px;
-        height: 30px;
-        width:30px;
-        background-color: white;
-        border-radius: 50%;
-        transition:.5s;
-      }
-      .dark{
-        background: rgba(0, 0, 0, .8);
-      }
-      .right{
-        justify-content: flex-end;
-        background-color: aquamarine;
-      }
-      .whiteText{
-        color:white;
-      }
-      .bg{
-        background-color: rgba(224, 186, 186, 0.772);
-        border-radius: 5px;
-      }
       .main{
-        margin-top: -250px;
+        margin-top: 50px;
         width:100%;
         height: auto;
         display:flex;
         justify-content: center;
       }
       .message{
-        margin-top: -250px;
+        margin-top: 50px;
         font-size: 36px;
         font-weight: 500;
+      }
+      @media only screen and (max-width:600px) {
+        .main{
+        margin-top:5px;
+        width:100%;
+        height: auto;
+        display:flex;
+        justify-content: center;
+        }
+        .message{
+        margin-top: 5px;
+        font-size: 36px;
+        font-weight: 500;
+       }
       }
     </style>
 </head>
 <body id="bgimg" class="bgimg">
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a href="index.html" class="mr-5 hover:text-gray-900 back">Home</a>
-            <a href="contact.html" class="mr-5 hover:text-gray-900 back">Contact</a>
-            <a href="about.html" class="mr-5 hover:text-gray-900 back">About</a>
-            <a href="gallary.html" class="hover:text-gray-900 back">Gallary</a>
-          </nav>
-          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-           
-              <img src="Images/Untitled-1.png" height="60px" width="60px">
-            
-            <span id="tb" class="ml-3 text-xl">Little Bells</span>
-          </a>
-          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 active">Explore More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </header>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a href="index.html"class="mr-5 hover:text-gray-900 back active">Home</a>
+        <a href="contact.html" class="mr-5 hover:text-gray-900 back">Contact</a>
+        <a href="about.html"class="mr-5 hover:text-gray-900 back">About</a>
+        <a href="gallary.html"class="hover:text-gray-900 back">Gallary</a>
+      </nav>
+      <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+       
+          <img src="Images/Untitled-1.png" height="60px" width="60px">
+        
+        <span id="tb" class="ml-3 text-xl">Little Bells</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <a href="index.html"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Return
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button></a>
+      </div>
+    </div>
+  </header>
+  
    
       <div class="main">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_fup2uejx.json" speed=".5"  style="width: 800px; height: 800px;"  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_fup2uejx.json" speed=".5"  style="width: 100%; height: 200px;"  loop  autoplay></lottie-player>
         
       </div>
       <center><h1 class="message">Page under maintainance. Page will be availabe soon.</h1></center>
+      
     </body>
     </html>
